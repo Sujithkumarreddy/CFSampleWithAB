@@ -14,6 +14,8 @@
         public int Views { get; set; }
         public string AgeGroupRange { get; set; }
         public string AddDesc { get; set; }
+        public string Promo { get; set; }
+        public string PromoName { get; set; }
     }
 
 
