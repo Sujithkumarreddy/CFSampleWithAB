@@ -8,7 +8,7 @@ install:
 script:
   - cd src/WebApiSample/  && dnu build
   - cd - && cd src/CFSampleWithAB.XUnit/ && dnu restore
-  - dnx test && cd - && cd src/WebApiSample/ && dnu build
+  - dnx test -parallel none && cd - && cd src/WebApiSample/
 deploy:
      edge: true
      provider: cloudfoundry
@@ -17,3 +17,4 @@ deploy:
      api: https://api.run.pivotal.io
      organization: Techavengers
      space: development
+
