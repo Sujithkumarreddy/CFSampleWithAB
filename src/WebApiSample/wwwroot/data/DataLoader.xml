@@ -12,7 +12,7 @@
     <Model val="I5">I Phone 5</Model>
     <Color val="GL">Gold</Color>
     <Specs>2 GB RAM</Specs>
-    <ImgPath>images/I6_Gold.jpg</ImgPath>
+    <ImgPath>images/I6_Gold.jpeg</ImgPath>
   </List>
   <List>
     <Make val="Apple">Apple</Make>

@@ -54,7 +54,7 @@ namespace WebApiSample.Controllers
                 CreateAdd objAdd = new CreateAdd();
                 objAdd.AgeGroup = value.AgeGroup;
                 objAdd.AgeGroupRange = value.AgeGroupRange;
-                objAdd.ImageURL = "";
+                objAdd.ImageURL = "images/I6_White.jpeg";
                 objAdd.Browser = value.Browser;
                 objAdd.Device = value.Device;
                 objAdd.Gender = value.Gender;
@@ -162,6 +162,61 @@ namespace WebApiSample.Controllers
             return Json(rt.AdsHistoryList);
         }
 
+        [Route("[action]/{id}")]
+        public int IncreaseAddClicks(int id)
+        {
+            var Product = InitData.lstAdds.Where(kvp => kvp.ID == id).Select(x => x).ToArray();
+
+            if (Product != null && Product.Length == 1)
+            {
+                Product[0].Views = Product[0].Views + 1;
+            }         
+            return 1;
+        }
+
+        [Route("[action]")]
+        public int IncreaseAddClicks()
+        {
+            List<CreateAdd> lst = InitData.lstAdds;
+
+            foreach (CreateAdd ad in lst)
+            {
+                ad.Views = ad.Views + 20;
+
+            }
+            return 1;
+        }
+
+        [Route("[action]")]
+        public int IncrementProductViews()
+        {
+            List<CreateAdd> lst = InitData.lstAdds;
+            List<AddsHistory> lstHistory = InitData.lstAddsHistory;
+            List<Product> lstProducts = InitData.lstProducts;
+
+            foreach (Product ad in lstProducts)
+            {
+                ad.Views = ad.Views + 10;
+
+            }
+            return 1;
+        }
+
+        [Route("[action]")]
+        public int IncreasePurchased()
+        {
+            List<CreateAdd> lst = InitData.lstAdds;
+            List<AddsHistory> lstHistory = InitData.lstAddsHistory;
+            List<Product> lstProducts = InitData.lstProducts;
+
+            foreach (Product ad in lstProducts)
+            {
+                ad.TotalNoOfPurchases = ad.TotalNoOfPurchases + 5;
+
+            }
+            return 1;
+        }
+        
     }
 
 

@@ -51,7 +51,7 @@ namespace WebApiSample.InitializeData
             lt2.Model = "I Phone 5";
             lt2.Color = "Gold";
             lt2.Specs = "2 GB RAM";
-            lt2.ImgPath = "images/I6_Gold.jpg";
+            lt2.ImgPath = "images/I6_Gold.jpeg";
             lt2.Price = "$200.0";
             lt2.OfferPrice = "$190.0";
             lt2.Views = 80;
@@ -77,7 +77,8 @@ namespace WebApiSample.InitializeData
             objAdd.Region = "AL";
             objAdd.RegionName = "Alabama";
             objAdd.URL = "Product.html&AgeGroup=" + objAdd.AgeGroup + "&Gender=" + objAdd.Gender + "&Region=" + objAdd.Region + "&Device=" + objAdd.Device + "&Browser=" + objAdd.Browser;
-            objAdd.ImageURL = "images/i6_Black.jpeg";
+            objAdd.ImageURL = "images/I6_Black.jpeg";
+            objAdd.AddDesc = "iphone 6s Black";
             lstAdds.Add(objAdd);
 
 
@@ -91,7 +92,8 @@ namespace WebApiSample.InitializeData
             objAdd2.Region = "AR";
             objAdd2.RegionName = "Arkansas";
             objAdd2.URL = "Product.html&AgeGroup=" + objAdd2.AgeGroup + "&Gender=" + objAdd2.Gender + "&Region=" + objAdd2.Region + "&Device=" + objAdd2.Device + "&Browser=" + objAdd2.Browser;
-            objAdd2.ImageURL = "images/i6_Black.jpeg";
+            objAdd2.ImageURL = "images/I6_Gold.jpeg";
+            objAdd2.AddDesc = "iphone 6s Gold";
             lstAdds.Add(objAdd2);
 
 
@@ -105,7 +107,8 @@ namespace WebApiSample.InitializeData
             objAdd3.Region = "CT";
             objAdd3.RegionName = "Connecticut";
             objAdd3.URL = "Product.html&AgeGroup=" + objAdd3.AgeGroup + "&Gender=" + objAdd3.Gender + "&Region=" + objAdd3.Region + "&Device=" + objAdd3.Device + "&Browser=" + objAdd3.Browser;
-            objAdd3.ImageURL = "images/i6_Black.jpeg";
+            objAdd3.ImageURL = "images/I6_White.jpeg";
+            objAdd3.AddDesc = "iphone 6s White";
             lstAdds.Add(objAdd3);
 
 
@@ -119,21 +122,23 @@ namespace WebApiSample.InitializeData
             objAdd4.Region = "IN";
             objAdd4.RegionName = "Indiana";
             objAdd4.URL = "Product.html&AgeGroup=" + objAdd4.AgeGroup + "&Gender=" + objAdd4.Gender + "&Region=" + objAdd4.Region + "&Device=" + objAdd4.Device + "&Browser=" + objAdd4.Browser;
-            objAdd4.ImageURL = "images/i6_Black.jpeg";
+            objAdd4.ImageURL = "images/I6_Gold.jpeg";
+            objAdd4.AddDesc = "iphone 6s Gold";
             lstAdds.Add(objAdd4);
 
-            CreateAdd objAdd5 = new CreateAdd();
-            objAdd5.ID = 5;
-            objAdd5.AgeGroup = "45T65";
-            objAdd5.AgeGroupRange = "45 To 64 Years";
-            objAdd5.Browser = "IE";
-            objAdd5.Device = "Android";
-            objAdd5.Gender = "M";
-            objAdd5.Region = "KS";
-            objAdd5.RegionName = "Kansas";
-            objAdd5.URL = "Product.html&AgeGroup=" + objAdd5.AgeGroup + "&Gender=" + objAdd5.Gender + "&Region=" + objAdd5.Region + "&Device=" + objAdd5.Device + "&Browser=" + objAdd5.Browser;
-            objAdd5.ImageURL = "images/i6_Black.jpeg";
-            lstAdds.Add(objAdd5);
+            //CreateAdd objAdd5 = new CreateAdd();
+            //objAdd5.ID = 5;
+            //objAdd5.AgeGroup = "45T65";
+            //objAdd5.AgeGroupRange = "45 To 64 Years";
+            //objAdd5.Browser = "IE";
+            //objAdd5.Device = "Android";
+            //objAdd5.Gender = "M";
+            //objAdd5.Region = "KS";
+            //objAdd5.RegionName = "Kansas";
+            //objAdd5.URL = "Product.html&AgeGroup=" + objAdd5.AgeGroup + "&Gender=" + objAdd5.Gender + "&Region=" + objAdd5.Region + "&Device=" + objAdd5.Device + "&Browser=" + objAdd5.Browser;
+            //objAdd5.ImageURL = "images/I6_Black.jpeg";
+            //objAdd5.AddDesc = "iphone 6s Black";
+            //lstAdds.Add(objAdd5);
             return lstAdds;
         }
 

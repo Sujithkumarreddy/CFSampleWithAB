@@ -24,7 +24,7 @@ namespace CFSampleWithAB.XUnit
             objAdd5.Region = "KS";
             objAdd5.RegionName = "Kansas";
             objAdd5.URL = "Product.html&AgeGroup=" + objAdd5.AgeGroup + "&Gender=" + objAdd5.Gender + "&Region=" + objAdd5.Region + "&Device=" + objAdd5.Device + "&Browser=" + objAdd5.Browser;
-            objAdd5.ImageURL = "Images/16_Black.jpeg";
+            objAdd5.ImageURL = "images/16_Black.jpeg";
 
             result = obj.PostURL(objAdd5).ToString();
             Assert.Equal("ERROR", result);
@@ -46,7 +46,7 @@ namespace CFSampleWithAB.XUnit
             objAdd5.Region = "KS";
             objAdd5.RegionName = "Kansas";
             objAdd5.URL = "Product.html&AgeGroup=" + objAdd5.AgeGroup + "&Gender=" + objAdd5.Gender + "&Region=" + objAdd5.Region + "&Device=" + objAdd5.Device + "&Browser=" + objAdd5.Browser;
-            objAdd5.ImageURL = "Images/16_Black.jpeg";
+            objAdd5.ImageURL = "images/16_Black.jpeg";
 
             result = obj.PostURL(objAdd5).ToString();
             Assert.Equal("OK", result);
