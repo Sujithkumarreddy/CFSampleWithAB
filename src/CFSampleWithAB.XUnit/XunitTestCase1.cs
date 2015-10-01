@@ -22,6 +22,8 @@ namespace CFSampleWithAB.XUnit
             objAdd5.Device = "Android";
             objAdd5.Gender = "M";
             objAdd5.Region = "KS";
+            objAdd5.Promo = "FB";
+            objAdd5.PromoName = "Facebook";
             objAdd5.RegionName = "Kansas";
             objAdd5.URL = "Product.html&AgeGroup=" + objAdd5.AgeGroup + "&Gender=" + objAdd5.Gender + "&Region=" + objAdd5.Region + "&Device=" + objAdd5.Device + "&Browser=" + objAdd5.Browser;
             objAdd5.ImageURL = "images/16_Black.jpeg";
@@ -44,6 +46,8 @@ namespace CFSampleWithAB.XUnit
             objAdd5.Device = "Android";
             objAdd5.Gender = "M";
             objAdd5.Region = "KS";
+            objAdd5.Promo = "FB";
+            objAdd5.PromoName = "Facebook";
             objAdd5.RegionName = "Kansas";
             objAdd5.URL = "Product.html&AgeGroup=" + objAdd5.AgeGroup + "&Gender=" + objAdd5.Gender + "&Region=" + objAdd5.Region + "&Device=" + objAdd5.Device + "&Browser=" + objAdd5.Browser;
             objAdd5.ImageURL = "images/16_Black.jpeg";

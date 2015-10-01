@@ -48,13 +48,13 @@ namespace WebApiSample.Controllers
         [Route("[action]")]
         public string PostURL(CreateAdd value)
         {
-              try
+            try
             {
                 var id = InitData.lstAdds.Count;
                 CreateAdd objAdd = new CreateAdd();
                 objAdd.AgeGroup = value.AgeGroup;
                 objAdd.AgeGroupRange = value.AgeGroupRange;
-                objAdd.ImageURL = "images/I6_White.jpeg";
+                objAdd.ImageURL = "";
                 objAdd.Browser = value.Browser;
                 objAdd.Device = value.Device;
                 objAdd.Gender = value.Gender;
@@ -63,6 +63,8 @@ namespace WebApiSample.Controllers
                 objAdd.URL = value.URL;
                 objAdd.RegionName = value.RegionName;
                 objAdd.ID = id + 1;
+                objAdd.Promo = value.Promo;
+                objAdd.PromoName = value.PromoName;
                 InitData.lstAdds.Add(objAdd);
 
                 return ("ok").ToUpper();
