@@ -81,7 +81,7 @@ namespace WebApiSample.InitializeData
             objAdd.RegionName = "Alabama";
             objAdd.Promo = "FB";
             objAdd.PromoName = "Facebook";
-            objAdd.URL = "Product.html&AgeGroup=" + objAdd.AgeGroup + "&Gender=" + objAdd.Gender + "&Region=" + objAdd.Region + "&Device=" + objAdd.Device + "&Browser=" + objAdd.Browser + "&Promo=" + objAdd.Promo;
+            objAdd.URL = "http://cfsamplewithab.cfapps.io/" +  "Product.html&AgeGroup=" + objAdd.AgeGroup + "&Gender=" + objAdd.Gender + "&Region=" + objAdd.Region + "&Device=" + objAdd.Device + "&Browser=" + objAdd.Browser + "&Promo=" + objAdd.Promo;
             objAdd.ImageURL = "images/I6_Black.jpeg";
             objAdd.AddDesc = "iphone 6s Black";
             lstAdds.Add(objAdd);
@@ -98,7 +98,7 @@ namespace WebApiSample.InitializeData
             objAdd2.Promo = "TW";
             objAdd2.PromoName = "Facebook";
             objAdd2.RegionName = "Arkansas";
-            objAdd2.URL = "Product.html&AgeGroup=" + objAdd2.AgeGroup + "&Gender=" + objAdd2.Gender + "&Region=" + objAdd2.Region + "&Device=" + objAdd2.Device + "&Browser=" + objAdd2.Browser + "&Promo=" + objAdd2.Promo;
+            objAdd2.URL = "http://cfsamplewithab.cfapps.io/" + "Product.html&AgeGroup=" + objAdd2.AgeGroup + "&Gender=" + objAdd2.Gender + "&Region=" + objAdd2.Region + "&Device=" + objAdd2.Device + "&Browser=" + objAdd2.Browser + "&Promo=" + objAdd2.Promo;
             objAdd2.ImageURL = "images/I6_Gold.jpeg";
             objAdd2.AddDesc = "iphone 6s Gold";
             lstAdds.Add(objAdd2);
@@ -115,7 +115,7 @@ namespace WebApiSample.InitializeData
             objAdd3.Promo = "FB";
             objAdd3.PromoName = "Facebook";
             objAdd3.RegionName = "Connecticut";
-            objAdd3.URL = "Product.html&AgeGroup=" + objAdd3.AgeGroup + "&Gender=" + objAdd3.Gender + "&Region=" + objAdd3.Region + "&Device=" + objAdd3.Device + "&Browser=" + objAdd3.Browser + "&Promo=" + objAdd3.Promo;
+            objAdd3.URL = "http://cfsamplewithab.cfapps.io/" + "Product.html&AgeGroup=" + objAdd3.AgeGroup + "&Gender=" + objAdd3.Gender + "&Region=" + objAdd3.Region + "&Device=" + objAdd3.Device + "&Browser=" + objAdd3.Browser + "&Promo=" + objAdd3.Promo;
             objAdd3.ImageURL = "images/I6_White.jpeg";
             objAdd3.AddDesc = "iphone 6s White";
             lstAdds.Add(objAdd3);
@@ -132,7 +132,7 @@ namespace WebApiSample.InitializeData
             objAdd4.Promo = "YT";
             objAdd4.PromoName = "Facebook";
             objAdd4.RegionName = "Indiana";
-            objAdd4.URL = "Product.html&AgeGroup=" + objAdd4.AgeGroup + "&Gender=" + objAdd4.Gender + "&Region=" + objAdd4.Region + "&Device=" + objAdd4.Device + "&Browser=" + objAdd4.Browser + "&Promo=" + objAdd4.Promo;
+            objAdd4.URL = "http://cfsamplewithab.cfapps.io/" + "Product.html&AgeGroup=" + objAdd4.AgeGroup + "&Gender=" + objAdd4.Gender + "&Region=" + objAdd4.Region + "&Device=" + objAdd4.Device + "&Browser=" + objAdd4.Browser + "&Promo=" + objAdd4.Promo;
             objAdd4.ImageURL = "images/I6_Gold.jpeg";
             objAdd4.AddDesc = "iphone 6s Gold";
             lstAdds.Add(objAdd4);

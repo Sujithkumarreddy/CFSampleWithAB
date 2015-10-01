@@ -54,13 +54,13 @@ namespace WebApiSample.Controllers
                 CreateAdd objAdd = new CreateAdd();
                 objAdd.AgeGroup = value.AgeGroup;
                 objAdd.AgeGroupRange = value.AgeGroupRange;
-                objAdd.ImageURL = "";
+                objAdd.ImageURL = "images/I6_Black.jpeg";
                 objAdd.Browser = value.Browser;
                 objAdd.Device = value.Device;
                 objAdd.Gender = value.Gender;
                 objAdd.Region = value.Region;
                 objAdd.AddDesc = value.AddDesc;
-                objAdd.URL = value.URL;
+                objAdd.URL = "http://cfsamplewithab.cfapps.io/" + value.URL;
                 objAdd.RegionName = value.RegionName;
                 objAdd.ID = id + 1;
                 objAdd.Promo = value.Promo;
