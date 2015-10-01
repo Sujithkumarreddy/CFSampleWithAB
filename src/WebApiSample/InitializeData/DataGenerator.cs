@@ -25,8 +25,9 @@ namespace WebApiSample.InitializeData
             lt.Price = "$200.0";
             lt.OfferPrice = "$190.0";
             lt.Views = 100;
-            lt.Description = "SUper Nateral Phone ...................... Random text.................";
+            lt.Description = "Description";
             lt.TotalNoOfPurchases = 40;
+            lt.Promo = "FB";
             lstProd.Add(lt);
 
             Product lt1 = new Product();
@@ -41,7 +42,8 @@ namespace WebApiSample.InitializeData
             lt1.OfferPrice = "$190.0";
             lt1.Views = 120;
             lt1.TotalNoOfPurchases = 20;
-            lt1.Description = "SUper Nateral Phone ...................... Random text.................";
+            lt1.Description = "Description";
+            lt1.Promo = "TW";
             lstProd.Add(lt1);
 
             Product lt2 = new Product();
@@ -56,7 +58,8 @@ namespace WebApiSample.InitializeData
             lt2.OfferPrice = "$190.0";
             lt2.Views = 80;
             lt2.TotalNoOfPurchases = 10;
-            lt2.Description = "SUper Nateral Phone ...................... Random text.................";
+            lt1.Promo = "YT";
+            lt2.Description = "Details.";
             lstProd.Add(lt2);
 
             return lstProd;
@@ -92,7 +95,7 @@ namespace WebApiSample.InitializeData
             objAdd2.Device = "Android";
             objAdd2.Gender = "F";
             objAdd2.Region = "AR";
-            objAdd2.Promo = "FB";
+            objAdd2.Promo = "TW";
             objAdd2.PromoName = "Facebook";
             objAdd2.RegionName = "Arkansas";
             objAdd2.URL = "Product.html&AgeGroup=" + objAdd2.AgeGroup + "&Gender=" + objAdd2.Gender + "&Region=" + objAdd2.Region + "&Device=" + objAdd2.Device + "&Browser=" + objAdd2.Browser + "&Promo=" + objAdd2.Promo;
@@ -126,7 +129,7 @@ namespace WebApiSample.InitializeData
             objAdd4.Device = "Android";
             objAdd4.Gender = "F";
             objAdd4.Region = "IN";
-            objAdd4.Promo = "FB";
+            objAdd4.Promo = "YT";
             objAdd4.PromoName = "Facebook";
             objAdd4.RegionName = "Indiana";
             objAdd4.URL = "Product.html&AgeGroup=" + objAdd4.AgeGroup + "&Gender=" + objAdd4.Gender + "&Region=" + objAdd4.Region + "&Device=" + objAdd4.Device + "&Browser=" + objAdd4.Browser + "&Promo=" + objAdd4.Promo;

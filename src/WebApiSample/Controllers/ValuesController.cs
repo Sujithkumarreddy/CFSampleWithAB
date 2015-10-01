@@ -80,9 +80,9 @@ namespace WebApiSample.Controllers
             return InitData.lstAdds;
         }
         [Route("[action]/{id}")]
-        public string IncrementCounter(int id)
+        public string IncrementCounter(Product value)
         {
-            var Product = InitData.lstProducts.Where(kvp => kvp.ID == id).Select(x => x).ToArray();
+            var Product = InitData.lstProducts.Where(kvp => kvp.ID == value.ID && kvp.Promo == value.Promo).Select(x => x).ToArray();
 
             if (Product != null && Product.Length == 1)
             {

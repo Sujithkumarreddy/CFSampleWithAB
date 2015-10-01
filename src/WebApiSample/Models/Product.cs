@@ -13,5 +13,6 @@
         public int Views { get; set; }
         public string Description { get; set; }
         public int TotalNoOfPurchases { get; set; }
+        public string Promo { get; set; }
     }
 }
