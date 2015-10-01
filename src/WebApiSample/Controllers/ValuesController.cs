@@ -160,6 +160,8 @@ namespace WebApiSample.Controllers
             rt.AdsHistoryList = ahl;
 
             return Json(rt.AdsHistoryList);
+
+            //return 
         }
 
         [Route("[action]/{id}")]
