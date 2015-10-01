@@ -76,7 +76,7 @@
     <form id="form1" runat="server">
         <div id='cssmenu'>
             <ul>
-                <li><a href='Home.html'><span>Home</span></a></li>
+                <li><a href='home.html'><span>Home</span></a></li>
                 <li class='has-sub'>
                     <a href='CreateAdd.html'><span>Admin</span></a>
                     <ul>
@@ -92,7 +92,7 @@
         <div id="views" class="container">
         </div>
         <div class="box panel panel-primary">
-            <table id="tblProductDetails"></table>
+            <table id="tblProductDetails" style="display:none"></table>
         </div>
         <div class="container">
             <div class="row panel panel-primary panel-border">
@@ -531,7 +531,7 @@
                     "<tr><td>Color</td><td>" + msg[i].Color + "</td></tr>" +
                     "<tr><td>Specs</td><td>" + msg[i].Specs + "</td></tr>" +
                     "<tr><td><a href='#'>" + msg[i].Description + "</a></td></tr>" +
-                     "<tr><td><input type='button'  value='Buy' class='btn btn-primary btn-lg' id='" + msg[i].ID + "'  data-view-name='" + msg[i].ID + "' title='Click here to buy'/></td><td>$639</td></tr>"
+                     "<tr><td><input type='button'  value='Buy' class='btn btn-primary btn-lg' id='" + msg[i].ID + "'  data-view-name='" + msg[i].ID + "' title='Click here to buy'/>&nbsp;&bnbsp; <input type='button' value='Back' class='btnBack btn-primary btn-lg'/> </td><td>$639</td></tr>"
              );
         });
     }
@@ -567,9 +567,9 @@
 
                 },
                 error: function (x, e) {
-                    alert('Failed');
+                 /*   alert('Failed');
                     alert(x.responseText);
-                    alert(x.status);
+                    alert(x.status); */
                 }
             });
         });
